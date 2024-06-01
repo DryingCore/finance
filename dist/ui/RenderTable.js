@@ -1,10 +1,7 @@
-"use strict";
-exports.__esModule = true;
-exports.RenderTable = void 0;
 // table/tab.js
-var cli_table_1 = require("cli-table");
-function RenderTable() {
-    var table = new cli_table_1["default"]({
+import Table from "cli-table";
+export function RenderTable() {
+    var table = new Table({
         chars: {
             top: "═",
             "top-mid": "╤",
@@ -29,4 +26,3 @@ function RenderTable() {
     table.push(["15/06/2007", "R$ 600", "Bills", "-2.50", "Expense"], ["15/06/2007", "R$ 600", "Bills", "-2.50", "Expense"]);
     console.log(table.toString());
 }
-exports.RenderTable = RenderTable;

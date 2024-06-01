@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "outDir": "./dist",
-        "module": "None",
+        "module": "ES6",
         "moduleResolution": "Node"
     }
 }
