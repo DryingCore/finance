@@ -1,5 +1,5 @@
 import select from "@inquirer/select";
-// Defina seu tema personalizado
+// Define your custom theme
 const customtheme = {
     prefix: "-----",
     spinner: {
@@ -11,12 +11,12 @@ const customtheme = {
         message: (text) => `\u001b[36m${text}\u001b[0m`,
         error: (text) => `\u001b[31m${text}\u001b[0m`,
         help: (text) => `\u001b[33m${text}\u001b[0m`,
-        highlight: (text) => `\u001b[35m${text}\u001b[0m`, // Estilo para destaque
+        highlight: (text) => `\u001b[35m${text}\u001b[0m`, // Style for highlight
     },
     icon: {
         cursor: "=>",
     },
-    helpMode: "never", // Modo de exibição da ajuda
+    helpMode: "never", // Help display mode
 };
 // sOpt => Select Option
 export async function sOpt() {
@@ -39,7 +39,7 @@ export async function sOpt() {
                 description: "Create a new table",
             },
         ],
-        theme: customtheme, // Usando o tema personalizado
+        theme: customtheme, // Using the custom theme
     });
     return answer;
 }
