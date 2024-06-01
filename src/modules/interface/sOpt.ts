@@ -37,9 +37,9 @@ export async function sOpt(): Promise<string> {
 				description: "Add a new entry to your table",
 			},
 			{
-				name: "Add payment",
-				value: "Add payment",
-				description: "Add a new payment to your table",
+				name: "New Expense",
+				value: "New Expense",
+				description: "Register a new expense.",
 			},
 			{
 				name: "Create table",
