@@ -1,1 +1,3 @@
+async function eD() {
+}
 export {};
