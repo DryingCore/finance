@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "outDir": "./dist",
-        "module": "Preserve",
+        "module": "None",
         "moduleResolution": "Node"
     }
 }
