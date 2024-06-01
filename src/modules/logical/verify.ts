@@ -1,5 +1,5 @@
 // logical/verify.js
-import { dI } from "../interface/prompt.js";
+import { dI } from "../interface/defineIncome.js";
 import { ctab } from "../table/ctab.js";
 
 // vS => verify selected
