@@ -34,6 +34,11 @@ export async function sOpt() {
                 description: "Add a new entry to your table",
             },
             {
+                name: "Add payment",
+                value: "Add payment",
+                description: "Add a new payment to your table",
+            },
+            {
                 name: "Create table",
                 value: "Create table",
                 description: "Create a new table",
