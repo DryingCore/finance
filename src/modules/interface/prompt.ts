@@ -1,5 +1,5 @@
 import input from "@inquirer/input";
 
-async function eD() {
-    
+export async function eD() {
+    const answer = await input({ message: 'Enter your name' });
 }
