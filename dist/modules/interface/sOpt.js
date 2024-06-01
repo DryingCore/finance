@@ -26,12 +26,12 @@ export async function sOpt() {
             {
                 name: "Show table",
                 value: "Show table",
-                description: "Render a table in the terminal",
+                description: "Show a graphical table at terminal.",
             },
             {
-                name: "Add Entry",
-                value: "Add Entry",
-                description: "Add a new entry to your table",
+                name: "New Income",
+                value: "New Income",
+                description: "Register a new income.",
             },
             {
                 name: "New Expense",
@@ -39,9 +39,9 @@ export async function sOpt() {
                 description: "Register a new expense.",
             },
             {
-                name: "Create table",
-                value: "Create table",
-                description: "Create a new table",
+                name: "Create new table",
+                value: "Create new table",
+                description: "Create a new table.",
             },
         ],
         theme: customtheme, // Using the custom theme
