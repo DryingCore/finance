@@ -3,7 +3,7 @@ import { CustomTheme } from "./customTheme.js";
 
 // Defina seu tema personalizado
 const customtheme: CustomTheme = {
-    prefix: "=>",
+    prefix: "-----",
     spinner: {
         interval: 100,
         frames: ["-", "\\", "|", "/"],
@@ -18,7 +18,7 @@ const customtheme: CustomTheme = {
     icon: {
         cursor: "=>",
     },
-    helpMode: "always", // Modo de exibição da ajuda
+    helpMode: "never", // Modo de exibição da ajuda
 };
 
 // sOpt => Select Option

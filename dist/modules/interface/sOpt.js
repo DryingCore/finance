@@ -1,7 +1,7 @@
 import select from "@inquirer/select";
 // Defina seu tema personalizado
 const customtheme = {
-    prefix: "=>",
+    prefix: "-----",
     spinner: {
         interval: 100,
         frames: ["-", "\\", "|", "/"],
@@ -16,7 +16,7 @@ const customtheme = {
     icon: {
         cursor: "=>",
     },
-    helpMode: "always", // Modo de exibição da ajuda
+    helpMode: "never", // Modo de exibição da ajuda
 };
 // sOpt => Select Option
 export async function sOpt() {
