@@ -12,7 +12,7 @@
 	"description": "",
 	"dependencies": {
 		"@inquirer/prompts": "^5.0.5",
-		"cli-table": "^0.3.11",
+		"cli-table": "^0.3.11"
 	},
 	"devDependencies": {
 		"@types/inquirer": "^9.0.7",
