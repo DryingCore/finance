@@ -1,7 +1,10 @@
+"use strict";
+exports.__esModule = true;
+exports.RenderTable = void 0;
 // table/tab.js
-import Table from "cli-table";
-export function RenderTable() {
-    const table = new Table({
+var cli_table_1 = require("cli-table");
+function RenderTable() {
+    var table = new cli_table_1["default"]({
         chars: {
             top: "═",
             "top-mid": "╤",
@@ -17,12 +20,13 @@ export function RenderTable() {
             "mid-mid": "┼",
             right: "║",
             "right-mid": "╢",
-            middle: "│",
+            middle: "│"
         },
         head: ["Date", "Balance", "Category", "Value", "Type"],
-        colWidths: [20, 20, 20, 20, 20],
+        colWidths: [20, 20, 20, 20, 20]
     });
     // table is an Array, so you can `push`, `unshift`, `splice` and friends
     table.push(["15/06/2007", "R$ 600", "Bills", "-2.50", "Expense"], ["15/06/2007", "R$ 600", "Bills", "-2.50", "Expense"]);
     console.log(table.toString());
 }
+exports.RenderTable = RenderTable;
