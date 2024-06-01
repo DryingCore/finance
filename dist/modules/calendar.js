@@ -1,3 +1,4 @@
+"use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -34,20 +35,21 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-import inquirer from "inquirer";
-import { format, startOfMonth, endOfMonth, eachDayOfInterval, getDay } from "date-fns";
+exports.__esModule = true;
+var inquirer_1 = require("inquirer");
+var date_fns_1 = require("date-fns");
 // Função para renderizar o calendário no terminal
 function renderCalendar() {
     var now = new Date();
-    var start = startOfMonth(now);
-    var end = endOfMonth(now);
-    var days = eachDayOfInterval({ start: start, end: end });
+    var start = (0, date_fns_1.startOfMonth)(now);
+    var end = (0, date_fns_1.endOfMonth)(now);
+    var days = (0, date_fns_1.eachDayOfInterval)({ start: start, end: end });
     var weekDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     var monthDays = [];
     // Renderiza os dias da semana
     monthDays.push(weekDays.join(" "));
     // Renderiza os dias do mês
-    var currentWeek = Array(getDay(start)).fill("   ");
+    var currentWeek = Array((0, date_fns_1.getDay)(start)).fill("   ");
     days.forEach(function (day) {
         currentWeek.push(day.getDate().toString().padStart(2, " ") + " ");
         if (currentWeek.length === 7) {
@@ -58,7 +60,7 @@ function renderCalendar() {
     if (currentWeek.length > 0) {
         monthDays.push(currentWeek.join(" "));
     }
-    console.log("\n".concat(format(now, "MMMM yyyy"), "\n"));
+    console.log("\n".concat((0, date_fns_1.format)(now, "MMMM yyyy"), "\n"));
     monthDays.forEach(function (week) { return console.log(week); });
 }
 // Função para perguntar ao usuário qual dia ele quer selecionar
@@ -69,14 +71,14 @@ function selectDay() {
             switch (_a.label) {
                 case 0:
                     now = new Date();
-                    start = startOfMonth(now);
-                    end = endOfMonth(now);
-                    days = eachDayOfInterval({ start: start, end: end });
+                    start = (0, date_fns_1.startOfMonth)(now);
+                    end = (0, date_fns_1.endOfMonth)(now);
+                    days = (0, date_fns_1.eachDayOfInterval)({ start: start, end: end });
                     choices = days.map(function (day) { return ({
-                        name: format(day, "do MMMM yyyy"),
+                        name: (0, date_fns_1.format)(day, "do MMMM yyyy"),
                         value: day
                     }); });
-                    return [4 /*yield*/, inquirer.prompt([
+                    return [4 /*yield*/, inquirer_1["default"].prompt([
                             {
                                 type: "list",
                                 name: "selectedDay",
@@ -102,7 +104,7 @@ function aD() {
                     return [4 /*yield*/, selectDay()];
                 case 1:
                     selectedDay = _a.sent();
-                    console.log("Voc\u00EA selecionou: ".concat(format(selectedDay, "do MMMM yyyy")));
+                    console.log("Voc\u00EA selecionou: ".concat((0, date_fns_1.format)(selectedDay, "do MMMM yyyy")));
                     return [2 /*return*/];
             }
         });
