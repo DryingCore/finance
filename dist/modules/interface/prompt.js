@@ -1,2 +1,4 @@
-import input from '@inquirer/input';
-const answer = await input({ message: 'Enter your name' });
+// nE => new entry
+async function nE() {
+}
+export {};
