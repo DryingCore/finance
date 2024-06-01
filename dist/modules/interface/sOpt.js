@@ -1,7 +1,7 @@
 import select from "@inquirer/select";
 // Define your custom theme
 const customtheme = {
-    prefix: "-----",
+    prefix: "",
     spinner: {
         interval: 100,
         frames: ["-", "\\", "|", "/"],
@@ -14,7 +14,7 @@ const customtheme = {
         highlight: (text) => `\u001b[35m${text}\u001b[0m`, // Style for highlight
     },
     icon: {
-        cursor: "=>",
+        cursor: "->",
     },
     helpMode: "never", // Help display mode
 };
