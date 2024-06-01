@@ -27,6 +27,6 @@ export function ctab() {
 	});
 
 	// table is an Array, so you can `push`, `unshift`, `splice` and friends
-	table.push(["15/06/2007", "R$ 600", "Bills", "-2.50", "Expense"], ["18/02/2008", "R$ 5900"]);
+	table.push(["15/06/2007", "R$ 600", "Bills", "-2.50", "Expense"], ["15/06/2007", "R$ 600", "Bills", "-2.50", "Expense"]);
 	console.log(table.toString());
 }
