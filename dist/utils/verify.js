@@ -1,6 +1,6 @@
 // logical/verify.js
-import { dI } from "../modules/ui/defineIncome.js";
-import { ctab } from "../modules/ui/ctab.js";
+import { dI } from "../ui/defineIncome.js";
+import { ctab } from "../ui/ctab.js";
 // vS => verify selected
 export async function vS(response) {
     if (response.toLowerCase() === "show table") {
