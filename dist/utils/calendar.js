@@ -1,28 +1,28 @@
-import inquirer from 'inquirer';
-import { format, startOfMonth, endOfMonth, eachDayOfInterval, getDay } from 'date-fns';
+import inquirer from "inquirer";
+import { format, startOfMonth, endOfMonth, eachDayOfInterval, getDay } from "date-fns";
 // Função para renderizar o calendário no terminal
 function renderCalendar() {
     const now = new Date();
     const start = startOfMonth(now);
     const end = endOfMonth(now);
     const days = eachDayOfInterval({ start, end });
-    const weekDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const weekDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     const monthDays = [];
     // Renderiza os dias da semana
-    monthDays.push(weekDays.join(' '));
+    monthDays.push(weekDays.join(" "));
     // Renderiza os dias do mês
-    let currentWeek = Array(getDay(start)).fill('   ');
+    let currentWeek = Array(getDay(start)).fill("   ");
     days.forEach(day => {
-        currentWeek.push(day.getDate().toString().padStart(2, ' ') + ' ');
+        currentWeek.push(day.getDate().toString().padStart(2, " ") + " ");
         if (currentWeek.length === 7) {
-            monthDays.push(currentWeek.join(' '));
+            monthDays.push(currentWeek.join(" "));
             currentWeek = [];
         }
     });
     if (currentWeek.length > 0) {
-        monthDays.push(currentWeek.join(' '));
+        monthDays.push(currentWeek.join(" "));
     }
-    console.log(`\n${format(now, 'MMMM yyyy')}\n`);
+    console.log(`\n${format(now, "MMMM yyyy")}\n`);
     monthDays.forEach(week => console.log(week));
 }
 // Função para perguntar ao usuário qual dia ele quer selecionar
@@ -32,14 +32,14 @@ async function selectDay() {
     const end = endOfMonth(now);
     const days = eachDayOfInterval({ start, end });
     const choices = days.map(day => ({
-        name: format(day, 'do MMMM yyyy'),
+        name: format(day, "do MMMM yyyy"),
         value: day,
     }));
     const answers = await inquirer.prompt([
         {
-            type: 'list',
-            name: 'selectedDay',
-            message: 'Selecione um dia:',
+            type: "list",
+            name: "selectedDay",
+            message: "Selecione um dia:",
             choices,
         },
     ]);
@@ -49,6 +49,6 @@ async function selectDay() {
 async function main() {
     renderCalendar();
     const selectedDay = await selectDay();
-    console.log(`Você selecionou: ${format(selectedDay, 'do MMMM yyyy')}`);
+    console.log(`Você selecionou: ${format(selectedDay, "do MMMM yyyy")}`);
 }
 main().catch(console.error);
