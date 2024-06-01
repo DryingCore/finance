@@ -14,7 +14,7 @@ const customtheme = {
         highlight: (text) => `\u001b[35m${text}\u001b[0m`, // Estilo para destaque
     },
     icon: {
-        cursor: ">",
+        cursor: "=>",
     },
     helpMode: "always", // Modo de exibição da ajuda
 };
