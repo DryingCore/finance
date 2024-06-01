@@ -1,16 +1,16 @@
 // logical/verify.js
-import { dI } from "../ui/DefineIncome.js";
-import { ctab } from "../ui/RenderTable.js";
+import { DefineIncome } from "../ui/DefineIncome.js";
+import { RenderTable } from "../ui/RenderTable.js";
 
 // vS => verify selected
-export async function vS(response: string) {
+export async function VerifyResponse(response: string) {
 	if (response.toLowerCase() === "show table") {
 		console.log("Showing table...");
-		ctab();
+		RenderTable();
 	}
 
 	if (response.toLowerCase() === "new income") {
-		dI();
+		DefineIncome();
 	}
 
 	if (response.toLowerCase() === "new expense") {

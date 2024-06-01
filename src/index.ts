@@ -1,4 +1,4 @@
 import { Init } from "./ui/Init.js";
-import { vS } from "./utils/VerifyResponse.js";
+import { VerifyResponse } from "./utils/VerifyResponse.js";
 
-Init().then(response => vS(response));
+Init().then(res => VerifyResponse);
