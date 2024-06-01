@@ -5,9 +5,9 @@ import Table from "cli-table";
 export function ctab() {
 	const table = new Table({
 		chars: {
-			top: "═",
-			"top-mid": "╤",
-			"top-left": "╔",
+			top: "-",
+			"top-mid": "-",
+			"top-left": "",
 			"top-right": "╗",
 			bottom: "═",
 			"bottom-mid": "╧",
