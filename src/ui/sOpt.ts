@@ -1,5 +1,5 @@
 import select from "@inquirer/select";
-import { CustomTheme } from "./customTheme.js";
+import { CustomTheme } from "../utils/ThemeInterface.js";
 
 // Define your custom theme
 const customtheme: CustomTheme = {

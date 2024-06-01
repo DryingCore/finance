@@ -1,4 +1,4 @@
 import { sOpt } from "./ui/sOpt.js";
-import { vS } from "./utils/verify.js";
+import { vS } from "./utils/VerifyResponse.js";
 
 sOpt().then(response => vS(response));
