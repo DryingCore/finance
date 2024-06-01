@@ -9,12 +9,11 @@ export async function vS(response: string) {
 		ctab();
 	}
 
-	if (response.toLowerCase() === "add entry") {
-		console.log("add entry...");
+	if (response.toLowerCase() === "new income") {
 		eD();
 	}
 
-	if (response.toLowerCase() === "create table") {
+	if (response.toLowerCase() === "new expense") {
 		console.log("creating table...");
 	}
 }
