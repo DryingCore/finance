@@ -3,7 +3,7 @@ import Table from "cli-table";
 // ctab => create table
 export function ctab() {
     const table = new Table({
-        head: ["Date", "Account Money", "Category", "Value", "Type"],
+        head: ["Date", "Balance", "Category", "Value", "Type"],
         colWidths: [20, 20, 20, 20, 20],
     });
     // table is an Array, so you can `push`, `unshift`, `splice` and friends
