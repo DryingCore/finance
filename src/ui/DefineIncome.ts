@@ -1,14 +1,13 @@
-import { dIC } from "./checkbox.js";
+import { defCategory } from "../modules/income/IncomeCategory.js";
 
 // dI => define income
-export async function dI() {
+export async function DefineIncome() {
 	console.log("New income!");
-	defDate().then(dIC);
+	defDate().then(defCategory);
 }
 
 import { input } from "@inquirer/prompts";
 
-// defDate => define date
 export async function defDate() {
 	const incomeDate = await input({ message: "Income date:" });
 	return incomeDate;

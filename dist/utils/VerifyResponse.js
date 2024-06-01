@@ -1,5 +1,5 @@
 // logical/verify.js
-import { dI } from "../ui/defineIncome.js";
+import { dI } from "../ui/DefineIncome.js";
 import { ctab } from "../ui/RenderTable.js";
 // vS => verify selected
 export async function vS(response) {
