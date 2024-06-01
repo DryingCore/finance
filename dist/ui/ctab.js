@@ -1,7 +1,7 @@
 // table/tab.js
 import Table from "cli-table";
 // ctab => create table
-export function ctab() {
+export function RenderTable() {
     const table = new Table({
         chars: {
             top: "═",
