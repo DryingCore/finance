@@ -56,8 +56,8 @@ async function selectDay(): Promise<Date> {
 	return answers.selectedDay;
 }
 
-// Função principal
-async function main() {
+// aD => ask date
+async function aD() {
 	renderCalendar();
 	const selectedDay = await selectDay();
 	console.log(`Você selecionou: ${format(selectedDay, "do MMMM yyyy")}`);
