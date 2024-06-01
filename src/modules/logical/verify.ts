@@ -1,5 +1,5 @@
 // logical/verify.js
-import { eD } from "../interface/prompt.js";
+import { dI } from "../interface/prompt.js";
 import { ctab } from "../table/ctab.js";
 
 // vS => verify selected
@@ -10,7 +10,7 @@ export async function vS(response: string) {
 	}
 
 	if (response.toLowerCase() === "new income") {
-		eD();
+		dI();
 	}
 
 	if (response.toLowerCase() === "new expense") {

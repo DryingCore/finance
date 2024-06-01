@@ -1,5 +1,6 @@
 import input from "@inquirer/input";
 
-export async function eD() {
-    const answer = await input({ message: 'Enter your name' });
+// dI => define income
+export async function dI() {
+	const date = await input({ message: "Income date:" });
 }
