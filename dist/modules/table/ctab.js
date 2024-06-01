@@ -7,6 +7,6 @@ export function ctab() {
         colWidths: [20, 20, 20, 20, 20],
     });
     // table is an Array, so you can `push`, `unshift`, `splice` and friends
-    table.push(["First value", "Second value"], ["First value", "Second value"]);
+    table.push(["15/06/2007", "R$ 600"], ["18/02/2008", "R$ 5900"]);
     console.log(table.toString());
 }
