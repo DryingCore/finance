@@ -1,6 +1,5 @@
 // table/tab.js
 import Table from "cli-table";
-
 export function RenderTable() {
 	const table = new Table({
 		chars: {
@@ -20,11 +19,9 @@ export function RenderTable() {
 			"right-mid": "╢",
 			middle: "│",
 		},
-
 		head: ["Date", "Balance", "Category", "Value", "Type"],
 		colWidths: [20, 20, 20, 20, 20],
 	});
-
 	// table is an Array, so you can `push`, `unshift`, `splice` and friends
 	table.push(["15/06/2007", "R$ 600", "Bills", "-2.50", "Expense"], ["15/06/2007", "R$ 600", "Bills", "-2.50", "Expense"]);
 	console.log(table.toString());

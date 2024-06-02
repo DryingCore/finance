@@ -15,7 +15,6 @@ const customtheme: CustomTheme = {
 	icon: { cursor: "->" },
 	helpMode: "never", // Help display mode
 };
-
 export async function Init(): Promise<string> {
 	const answer: string = await select({
 		message: "Please select a option",
