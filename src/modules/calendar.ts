@@ -6,15 +6,11 @@ function renderCalendar() {
 	const now = new Date();
 	const start = startOfMonth(now);
 	const end = endOfMonth(now);
-
 	const days = eachDayOfInterval({ start, end });
-
 	const weekDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 	const monthDays: string[] = [];
-
 	// Renderiza os dias da semana
 	monthDays.push(weekDays.join(" "));
-
 	// Renderiza os dias do mês
 	let currentWeek: string[] = Array(getDay(start)).fill("   ");
 	days.forEach(day => {
@@ -27,11 +23,9 @@ function renderCalendar() {
 	if (currentWeek.length > 0) {
 		monthDays.push(currentWeek.join(" "));
 	}
-
 	console.log(`\n${format(now, "MMMM yyyy")}\n`);
 	monthDays.forEach(week => console.log(week));
 }
-
 // Função para perguntar ao usuário qual dia ele quer selecionar
 async function selectDay(): Promise<Date> {
 	const now = new Date();
@@ -43,7 +37,6 @@ async function selectDay(): Promise<Date> {
 		name: format(day, "do MMMM yyyy"),
 		value: day,
 	}));
-
 	const answers = await inquirer.prompt([
 		{
 			type: "list",
@@ -52,10 +45,8 @@ async function selectDay(): Promise<Date> {
 			choices,
 		},
 	]);
-
 	return answers.selectedDay;
 }
-
 // aD => ask date
 async function aD() {
 	renderCalendar();
