@@ -4,9 +4,7 @@ export async function DefineIncome() {
     console.log("New income!");
     defDate().then(defCategory);
 }
-import { input } from "@inquirer/prompts";
 export async function defDate() {
-    const incomeDate = await input({ message: "Income date:" });
-    aD();
+    const incomeDate = await aD();
     return incomeDate;
 }

@@ -8,7 +8,6 @@ export async function DefineIncome() {
 
 import { input } from "@inquirer/prompts";
 export async function defDate() {
-	const incomeDate = await input({ message: "Income date:" });
-	aD()
+	const incomeDate = await aD()
 	return incomeDate;
 }
