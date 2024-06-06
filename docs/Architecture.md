@@ -16,3 +16,5 @@ I'll pass at all folders of this program and document every single file, I will 
 Here we have all our files:
 
 ![alt text](diagrams/image.png)
+
+This is the structure and it should display like this at your machine.
