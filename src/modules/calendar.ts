@@ -2,7 +2,7 @@ import inquirer from "inquirer";
 import { format, startOfMonth, endOfMonth, eachDayOfInterval, getDay } from "date-fns";
 
 // Função para renderizar o calendário no terminal
-function renderCalendar() {
+export function renderCalendar() {
 	const now = new Date();
 	const start = startOfMonth(now);
 	const end = endOfMonth(now);
@@ -27,7 +27,7 @@ function renderCalendar() {
 	monthDays.forEach(week => console.log(week));
 }
 // Função para perguntar ao usuário qual dia ele quer selecionar
-async function selectDay(): Promise<Date> {
+export async function selectDay(): Promise<Date> {
 	const now = new Date();
 	const start = startOfMonth(now);
 	const end = endOfMonth(now);
