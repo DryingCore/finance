@@ -11,4 +11,4 @@ I'll pass at all folders of this program and document every single file, I will 
 
 ---
 
-## Root Directory 
+## `~/github/finance$`
