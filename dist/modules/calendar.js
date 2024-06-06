@@ -51,3 +51,4 @@ async function aD() {
     const selectedDay = await selectDay();
     console.log(`Você selecionou: ${format(selectedDay, "do MMMM yyyy")}`);
 }
+aD();

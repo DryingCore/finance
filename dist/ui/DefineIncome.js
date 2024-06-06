@@ -1,5 +1,4 @@
 import { defCategory } from "../modules/income/IncomeCategory.js";
-// dI => define income
 export async function DefineIncome() {
     console.log("New income!");
     defDate().then(defCategory);
