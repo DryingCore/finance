@@ -18,3 +18,4 @@ Here we have all our files:
 ![alt text](diagrams/image.png)
 
 This is the structure and it should display like this at your machine.
+ 
