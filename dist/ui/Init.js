@@ -4,10 +4,10 @@ const customtheme = {
     prefix: "",
     spinner: { interval: 100, frames: ["-", "\\", "|", "/"] },
     style: {
-        answer: (text) => `\u001b[32m${text}\u001b[0m`,
-        message: (text) => `\u001b[36m${text}\u001b[0m`,
-        error: (text) => `\u001b[31m${text}\u001b[0m`,
-        help: (text) => `\u001b[33m${text}\u001b[0m`,
+        answer: (text) => `\u001b[32m${text}\u001b[0m`, // Style for the answer
+        message: (text) => `\u001b[36m${text}\u001b[0m`, // Style for the message
+        error: (text) => `\u001b[31m${text}\u001b[0m`, // Style for error
+        help: (text) => `\u001b[33m${text}\u001b[0m`, // Style for help
         highlight: (text) => `\u001b[35m${text}\u001b[0m`, // Style for highlight
     },
     icon: { cursor: "->" },
