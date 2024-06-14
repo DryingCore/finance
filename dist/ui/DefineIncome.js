@@ -14,7 +14,3 @@ export async function defBalance() {
         message: "What's the income balance?",
     });
 }
-function visualFormatToBRL(input, { isFinal }) {
-    if (isFinal) {
-    }
-}
