@@ -7,6 +7,7 @@ export async function defCategory() {
 		choices: [
 			{ name: "Payment", value: "Payment" },
 			{ name: "Freelance", value: "Freelance" },
+			{ name: "Occasional income", value: "Occasional income" },
 		],
 	});
 }
