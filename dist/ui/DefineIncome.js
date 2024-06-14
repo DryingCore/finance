@@ -1,3 +1,4 @@
+import { input } from "@inquirer/prompts";
 import { aD } from "../modules/global/calendar.js";
 import { defCategory } from "../modules/income/IncomeCategory.js";
 export async function DefineIncome() {
@@ -7,4 +8,10 @@ export async function DefineIncome() {
 export async function defDate() {
     const incomeDate = await aD();
     return incomeDate;
+}
+export async function defBalance() {
+    const incomeBalance = await input({
+        message: "What's the income balance?",
+    });
+    return incomeBalance;
 }
