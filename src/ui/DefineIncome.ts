@@ -14,8 +14,9 @@ export async function defDate() {
 export async function defBalance() {
 	const userInput = await input({
 		message: "What's the income balance?",
-		
 	});
-	const incomeBalance = "R$ " + userInput;
-	return incomeBalance;
+}
+
+function visualFormatToBRL(input: string, { isFinal }) {
+	
 }
