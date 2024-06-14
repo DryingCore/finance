@@ -6,7 +6,7 @@ export async function defCategory() {
 		message: "What's the income category?",
 		choices: [
 			{ name: "Payday", value: "Payday" },
-			{ name: "Offshore", value: "a" },
+			{ name: "Money received", value: "Money received" },
 		],
 	});
 }
