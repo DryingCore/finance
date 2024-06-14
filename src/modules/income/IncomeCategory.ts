@@ -5,8 +5,8 @@ export async function defCategory() {
 	const category = await checkbox({
 		message: "What's the income category?",
 		choices: [
-			{ name: "Payday", value: "Payday" },
-			{ name: "Money received", value: "Money received" },
+			{ name: "Payment", value: "Payment" },
+			{ name: "Freelance", value: "Freelance" },
 		],
 	});
 }
