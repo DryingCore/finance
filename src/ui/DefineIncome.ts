@@ -18,5 +18,5 @@ export async function defBalance() {
 }
 
 function visualFormatToBRL(input: string, { isFinal }) {
-	
+	return 
 }

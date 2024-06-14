@@ -15,4 +15,5 @@ export async function defBalance() {
     });
 }
 function visualFormatToBRL(input, { isFinal }) {
+    return;
 }
