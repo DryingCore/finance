@@ -11,10 +11,10 @@ export async function defDate() {
 	const incomeDate = await aD();
 	return incomeDate;
 }
-
 export async function defBalance() {
 	const incomeBalance = await input({
 		message: "What's the income balance?",
+		default: "R$ UserInput",
 	});
 	return incomeBalance;
 }
