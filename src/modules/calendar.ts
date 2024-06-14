@@ -9,9 +9,9 @@ export function renderCalendar() {
 	const days = eachDayOfInterval({ start, end });
 	const weekDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 	const monthDays: string[] = [];
-	// Renderiza os dias da semana
+	// Render week days
 	monthDays.push(weekDays.join(" "));
-	// Renderiza os dias do mês
+	// Render month days
 	let currentWeek: string[] = Array(getDay(start)).fill("   ");
 	days.forEach(day => {
 		currentWeek.push(day.getDate().toString().padStart(2, " ") + " ");
@@ -26,7 +26,7 @@ export function renderCalendar() {
 	console.log(`\n${format(now, "MMMM yyyy")}\n`);
 	monthDays.forEach(week => console.log(week));
 }
-// Função para perguntar ao usuário qual dia ele quer selecionar
+// Function to ask the user which day he wants to select
 export async function selectDay(): Promise<Date> {
 	const now = new Date();
 	const start = startOfMonth(now);
