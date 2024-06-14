@@ -10,7 +10,7 @@ export async function VerifyResponse(response: string) {
 	}
 
 	if (response.toLowerCase() === "new income") {
-		DefineIncome();
+		DefineIncome()
 	}
 
 	if (response.toLowerCase() === "new expense") {
