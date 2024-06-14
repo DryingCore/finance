@@ -1,4 +1,4 @@
-import { aD } from "../modules/calendar.js";
+import { aD } from "../modules/global/calendar.js";
 import { defCategory } from "../modules/income/IncomeCategory.js";
 export async function DefineIncome() {
     console.log("New income!");
