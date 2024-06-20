@@ -3,5 +3,6 @@ import { defCategory } from "../modules/income/defCategory.js";
 import { defBalance } from "../modules/income/defBalance.js";
 
 export async function DefineIncome() {
-	defDate().then(defCategory).then(defBalance);
+	const [date, category, balance] = await Promise.all([defDate(), defCategory(), defBalance()]);
+	console.log({ date, category, balance });
 }
