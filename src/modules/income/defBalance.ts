@@ -7,5 +7,5 @@ export async function defBalance() {
 		message: "What's the income value? R$",
 	});
 
-	return userBalance;
+	return `R$ ${userBalance.balance}`;
 }
