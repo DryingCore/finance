@@ -7,5 +7,4 @@ export async function promptCalendar() {
 	renderCalendar();
 	const selectedDay = await selectDay();
 	console.log(`You have selected: ${format(selectedDay, "do MMMM yyyy")}`);
-	return selectDay;
 }
