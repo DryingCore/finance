@@ -1,4 +1,4 @@
-import { prompts } from "prompts";
+import prompts from "prompts";
 import { promptCalendar } from "../modules/global/promptCalendar.js";
 import { defCategory } from "../modules/income/IncomeCategory.js";
 
@@ -13,6 +13,12 @@ export async function defDate() {
 }
 
 // function to define income
-function defBalance() {
-	return 0;
+async function defBalance() {
+	const userBalance = await prompts({
+		type: "text",
+		name: "balance",
+		message: "What's the income value?",
+	});
+
+	return userBalance;
 }
