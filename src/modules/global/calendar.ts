@@ -42,7 +42,7 @@ export async function selectDay(): Promise<Date> {
 		{
 			type: "list",
 			name: "selectedDay",
-			message: "Selecione um dia:",
+			message: "Select a day:",
 			choices,
 		},
 	]);
@@ -51,5 +51,5 @@ export async function selectDay(): Promise<Date> {
 export async function promptCalendar() {
 	renderCalendar();
 	const selectedDay = await selectDay();
-	console.log(`Você selecionou: ${format(selectedDay, "do MMMM yyyy")}`);
+	console.log(`You have selected: ${format(selectedDay, "do MMMM yyyy")}`);
 }
