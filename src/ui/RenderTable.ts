@@ -1,4 +1,3 @@
-// table/tab.js
 import Table from "cli-table";
 export function RenderTable() {
 	const table = new Table({
