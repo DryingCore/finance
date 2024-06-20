@@ -9,4 +9,5 @@ export async function defCategory() {
 			{ name: "Occasional income", value: "Occasional income" },
 		],
 	});
+	return category;
 }
