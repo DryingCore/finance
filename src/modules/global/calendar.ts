@@ -1,7 +1,8 @@
+// Necessary imports
 import inquirer from "inquirer";
-import { format, startOfMonth, endOfMonth, eachDayOfInterval, getDay } from "date-fns";
+import { format, startOfMonth, endOfMonth, eachDayOfInterval, getDay } from "date-fns"; // importing necessary modules
 
-// Função para renderizar o calendário no terminal
+// Render calendar function
 export function renderCalendar() {
 	const now = new Date();
 	const start = startOfMonth(now);
@@ -47,8 +48,7 @@ export async function selectDay(): Promise<Date> {
 	]);
 	return answers.selectedDay;
 }
-// aD => ask date
-export async function aD() {
+export async function promptCalendar() {
 	renderCalendar();
 	const selectedDay = await selectDay();
 	console.log(`Você selecionou: ${format(selectedDay, "do MMMM yyyy")}`);
