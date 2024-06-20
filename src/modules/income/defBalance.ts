@@ -6,6 +6,5 @@ export async function defBalance() {
 		name: "balance",
 		message: "What's the income value? R$",
 	});
-
 	return `R$ ${userBalance.balance}`;
 }
