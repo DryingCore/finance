@@ -1,13 +1,18 @@
 import { prompts } from "prompts";
-import { aD } from "../modules/global/calendar.js";
+import { promptCalendar } from "../modules/global/calendar.js";
 import { defCategory } from "../modules/income/IncomeCategory.js";
 
 export async function DefineIncome() {
 	console.log("New income!");
-	defDate().then(defCategory).then(defBalance);
+	defDate().then(defCategory).then();
 }
 
 export async function defDate() {
-	const incomeDate = await aD();
+	const incomeDate = await promptCalendar();
 	return incomeDate;
+}
+
+// function to define income
+function defIncome() {
+	return 0;
 }
