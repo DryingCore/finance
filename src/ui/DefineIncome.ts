@@ -1,5 +1,5 @@
 import { prompts } from "prompts";
-import { promptCalendar } from "../modules/global/calendar.js";
+import { promptCalendar } from "../modules/global/promptCalendar.js";
 import { defCategory } from "../modules/income/IncomeCategory.js";
 
 export async function DefineIncome() {
