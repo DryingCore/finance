@@ -1,6 +1,6 @@
-import { defDate } from "../modules/income/DefDate.js";
-import { defCategory } from "../modules/income/IncomeCategory.js";
-import { defBalance } from "../modules/income/IncomeBalance.js";
+import { defDate } from "../modules/income/defDate.js";
+import { defCategory } from "../modules/income/defCategory.js";
+import { defBalance } from "../modules/income/defBalance.js";
 
 export async function DefineIncome() {
 	defDate().then(defCategory).then(defBalance);
