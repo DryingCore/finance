@@ -2,7 +2,6 @@
 import { DefineIncome } from "../ui/DefineIncome.js";
 import { RenderTable } from "../ui/RenderTable.js";
 
-// vS => verify selected
 export async function VerifyResponse(response: string) {
 	if (response.toLowerCase() === "show table") {
 		console.log("Showing table...");
@@ -10,7 +9,7 @@ export async function VerifyResponse(response: string) {
 	}
 
 	if (response.toLowerCase() === "new income") {
-		DefineIncome()
+		DefineIncome();
 	}
 
 	if (response.toLowerCase() === "new expense") {

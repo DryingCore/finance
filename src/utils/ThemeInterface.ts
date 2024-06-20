@@ -1,4 +1,3 @@
-// Defina a interface para o tema personalizado
 export interface CustomTheme {
 	prefix: string;
 	spinner: {

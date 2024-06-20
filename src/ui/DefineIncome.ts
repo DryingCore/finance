@@ -4,7 +4,7 @@ import { defCategory } from "../modules/income/IncomeCategory.js";
 
 export async function DefineIncome() {
 	console.log("New income!");
-	defDate().then(defCategory).then();
+	defDate().then(defCategory).then(defBalance);
 }
 
 export async function defDate() {
@@ -13,6 +13,6 @@ export async function defDate() {
 }
 
 // function to define income
-function defIncome() {
+function defBalance() {
 	return 0;
 }
